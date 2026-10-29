@@ -1,0 +1,31 @@
+<h2> Lista de Solicitudes</h2>
+
+<a routerLink="/solicitud/nueva">
+    Crear nueva persona
+</a>
+
+<hr>
+@if (solicitudes().length === 0) {
+    <p>no hay personas pregunta</p>
+
+}@else {
+    @for (solicitud of solicitudes(); track solicitud.id) {
+
+    <div class="solicitud">
+        <h3> {{solicitud.nombreSolicitante}} {{solicitud.tipoProyecto}} </h3>
+
+        
+
+       <a [routerLink]="['/solicitudes', solicitud.id]">
+        Ver detalles
+        </a>
+
+        <button (click)="elimarSolictud(solicitud.id!)">
+            Eliminar
+        </button>
+
+        <hr>
+
+    </div>
+    }
+}

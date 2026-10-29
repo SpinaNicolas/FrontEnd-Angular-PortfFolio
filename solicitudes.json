@@ -1,0 +1,23 @@
+{
+  "solicitudes": [
+    {
+      "id": "2",
+      "nombreSolicitante": "María González",
+      "email": "maria@gmail.com",
+      "tipoProyecto": "Sistema de gestión",
+      "descripcion": "Aplicación para administrar clientes y ventas.",
+      "presupuesto": 350000,
+      "fecha": "2026-10-15"
+    },
+    {
+      "nombreSolicitante": "nicolas spina",
+      "email": "spinanicolas11@gmail.com",
+      "tipoProyecto": "APP GYM",
+      "descripcion": "Aplicacion para llevarregistro del gimnasio",
+      "presupuesto": 6000,
+      "fecha": "10/12/2026",
+      "id": "A5wzOn64awo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,18 @@
+@if (proyecto(); as p) {
+
+  <h1>{{ p.nombre }}</h1>
+
+  <img [src]="p.imagen" [alt]="p.nombre" width="400">
+
+  <h3>{{ p.descripcionCorta }}</h3>
+
+  <p>{{ p.descripcion }}</p>
+
+  <h4>Tecnologías utilizadas</h4>
+  <p>{{ p.tecnologias }}</p>
+
+} @else {
+
+  <p>Cargando proyecto...</p>
+
+}

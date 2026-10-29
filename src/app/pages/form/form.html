@@ -1,0 +1,74 @@
+@if (id) {
+    <h2>Editar Persona</h2>
+
+}@else {
+    <h2>Nueva Persona</h2>
+}
+
+<form (submit)="$event.preventDefault(); onSubmit()">
+    <!-- NOMBRE-->
+     <div>
+        <label for="nombreSolicitante">Nombre y apellido</label>
+        <input id="nombreSolicitante" type="text" [formField]="solicitudesForm.nombreSolicitante">
+
+        @if(solicitudesForm.nombreSolicitante().touched() && 
+        solicitudesForm.nombreSolicitante().getError('required')){
+            <small>El nombre es obligatorio</small>
+        }
+     </div>
+
+     <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" [formField]="solicitudesForm.email">
+
+        @if (solicitudesForm.email().touched() &&
+             solicitudesForm.email().getError('required')) {
+                <small>El email es obligatorio</small>
+             }
+     </div>
+
+     <div>
+        <label for="tipoProyecto">Titulo del proyecto</label>
+        <input type="text"id="tipoProyecto"[formField]="solicitudesForm.tipoProyecto">
+        @if (solicitudesForm.tipoProyecto().touched() && 
+            solicitudesForm.tipoProyecto().getError('required')) {
+                <small>El nombre del proyecto es obligatorio</small>
+            }
+     </div>
+
+     <div>
+        <label for="descripcion"> Breve descripcion</label>
+        <input type="text" id="descripcion"[formField]="solicitudesForm.descripcion">
+        @if (solicitudesForm.descripcion().touched()&&
+             solicitudesForm.descripcion().getError('required')) {
+                <small>La descripcion es obligatoria</small>
+             }
+     </div>
+
+     <div>
+        <label for="presupuesto"> presupuesto</label>
+      <input type="number" id="presupuesto" [formField]="solicitudesForm.presupuesto">
+      @if (solicitudesForm.presupuesto().touched()&&
+           solicitudesForm.presupuesto().getError('required')) {
+            <small> El presupuesto es obligatorio</small>
+           }
+     </div>
+
+     <div>
+        <label for="fecha"> ingrese fecha</label>
+        <input type="text" id="fecha"[formField]="solicitudesForm.fecha">
+        @if (solicitudesForm.fecha().touched() && 
+             solicitudesForm.fecha().getError('required')) {
+                <small>La fecha es obligatoria</small>
+             }
+     </div>
+     <br>
+     <button type="submit"> 
+        @if (id) {
+            Guardar cambios
+        }@else {
+            Crear persona
+        }
+     </button>
+     </form>    
+     

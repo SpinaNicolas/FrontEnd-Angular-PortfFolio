@@ -1,0 +1,33 @@
+@if (solicitud(); as s) {
+
+  <h2>Detalle de la solicitud</h2>
+
+  <div>
+    <h3>{{ s.nombreSolicitante }}</h3>
+
+    <p><strong>Email:</strong> {{ s.email }}</p>
+
+    <p><strong>Tipo de proyecto:</strong> {{ s.tipoProyecto }}</p>
+
+    <p><strong>Descripción:</strong> {{ s.descripcion }}</p>
+
+    <p><strong>Presupuesto:</strong> ${{ s.presupuesto }}</p>
+
+    <p><strong>Fecha:</strong> {{ s.fecha }}</p>
+  </div>
+
+  <a [routerLink]="['/solicitudes', s.id, 'editar']">
+    Editar solicitud
+  </a>
+
+  <br>
+
+  <a routerLink="/solicitudes">
+    Volver a solicitudes
+  </a>
+
+} @else {
+
+  <p>Cargando solicitud...</p>
+
+}

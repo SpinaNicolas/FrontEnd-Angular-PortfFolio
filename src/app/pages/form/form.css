@@ -1,0 +1,120 @@
+
+:host {
+  display: block;
+  min-height: 100%;
+  padding: 50px 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 30px;
+  color: #ffffff;
+}
+
+/* Contenedor del formulario */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+/* Cada campo */
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+/* Etiquetas */
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 13px 15px;
+  background-color: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+input::placeholder {
+  color: #64748b;
+}
+
+/* Mensajes de validación */
+small {
+  margin-top: 6px;
+  color: #f87171;
+  font-size: 12px;
+}
+
+/* Botón */
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #0284c7;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :host {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  form {
+    padding: 25px 20px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+}

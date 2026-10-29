@@ -1,0 +1,21 @@
+
+{
+  "proyectos": [
+    {
+      "id": "1",
+      "nombre": "Sistema de Gimnasio",
+      "descripcionCorta": "Gestión de alumnos y rutinas",
+      "descripcion": "API REST desarrollada con Spring Boot para gestionar alumnos, profesores, ejercicios y rutinas.",
+      "tecnologias": "Java, Spring Boot, Spring Security, MySQL",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYyGDjVKfsw6EAxsMtrhHqI8a3ygUB-Jv0a1HQN8IW7Q&s=10"
+    },
+    {
+      "id": "2",
+      "nombre": "Ludoteca",
+      "descripcionCorta": "Sistema de reservas de juegos",
+      "descripcion": "API REST para gestionar socios, juegos y reservas.",
+      "tecnologias": "Java, Spring Boot, MySQL",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEE3XdeNky9TxwladYkLqsk9FKzrW7N4bbp2z9Mxtdw&s"
+    }
+  ]
+}

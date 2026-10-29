@@ -1,0 +1,24 @@
+#padre {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+    background-color: rgb(205, 205, 236);
+}
+
+#footer {
+    grid-area: footer;
+}

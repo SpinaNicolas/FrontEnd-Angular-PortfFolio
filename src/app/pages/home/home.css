@@ -1,0 +1,130 @@
+
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+#home {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 8%;
+  background-color: #0f172a;
+  color: #f8fafc;
+  box-sizing: border-box;
+}
+
+#home nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 900px;
+}
+
+#home p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Nombre principal */
+#home p:first-child {
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+/* Presentación */
+#home p:nth-child(2) {
+  font-size: 18px;
+  color: #38bdf8;
+  line-height: 1.5;
+}
+
+/* Botón de proyectos */
+#home a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #0284c7;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#home a:hover {
+  background-color: #0369a1;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+  #home {
+    padding: 25px 6%;
+    align-items: flex-start;
+  }
+
+  #home nav {
+    gap: 14px;
+  }
+
+  #home p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #home p:first-child {
+    font-size: 34px;
+  }
+
+  #home p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  #home a {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 8px;
+  }
+}
+
+/* Pantallas con poca altura */
+@media (max-height: 700px) {
+  #home {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #home nav {
+    gap: 10px;
+  }
+
+  #home p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #home p:first-child {
+    font-size: 32px;
+  }
+
+  #home p:nth-child(2) {
+    font-size: 16px;
+  }
+}

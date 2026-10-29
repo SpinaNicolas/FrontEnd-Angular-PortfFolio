@@ -1,0 +1,21 @@
+<h2>Mis proyectos</h2>
+
+@for (proyecto of proyectoService.proyectos(); track proyecto.id) {
+
+  <div>
+    <h3>{{ proyecto.nombre }}</h3>
+
+    <p>{{ proyecto.descripcionCorta }}</p>
+
+    <p>{{ proyecto.tecnologias }}</p>
+
+    <a [routerLink]="['/proyectos', proyecto.id]">
+      Ver detalles
+    </a>
+  </div>
+
+} @empty {
+
+  <p>No hay proyectos disponibles.</p>
+
+}
