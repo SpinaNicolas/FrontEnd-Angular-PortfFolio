@@ -1,59 +1,88 @@
-# PortFolio
+# FrontEnd Angular Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Aplicación web desarrollada con **Angular 22**, orientada a la gestión de proyectos y solicitudes mediante una interfaz dinámica y componentes reutilizables.
 
-## Development server
+## Tecnologías utilizadas
 
-To start a local development server, run:
+- Angular 22
+- TypeScript
+- HTML5
+- CSS3
+- Angular Router
+- Angular Signals
+- HttpClient
+- JSON Server (API REST simulada)
+
+## Funcionalidades
+
+- Visualización de proyectos disponibles.
+- Consulta de información detallada de cada proyecto.
+- Registro de nuevas solicitudes.
+- Listado y consulta de solicitudes existentes.
+- Edición de solicitudes.
+- Navegación entre vistas mediante Angular Router.
+- Comunicación con una API REST simulada mediante JSON Server.
+
+## Estructura del proyecto
+
+```text
+src/app/
+├── components/
+│   ├── header/
+│   └── footer/
+├── models/
+├── pages/
+│   ├── home/
+│   ├── proyectos-list/
+│   ├── proyecto-details/
+│   ├── solicitudes-list/
+│   ├── solicitudes-details/
+│   └── form/
+└── services/
+```
+
+## Instalación y ejecución
+
+**1. Clonar el repositorio**
+
+```bash
+git clone https://github.com/SpinaNicolas/FrontEnd-Angular-PortfFolio.git
+```
+
+**2. Instalar las dependencias**
+
+```bash
+npm install
+```
+
+**3. Iniciar JSON Server**
+
+En una terminal:
+
+```bash
+npx json-server proyectos.json --port 3002
+```
+
+En otra terminal:
+
+```bash
+npx json-server solicitudes.json --port 3000
+```
+
+**4. Ejecutar Angular**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abrir `http://localhost:4200/` en el navegador.
 
-## Code scaffolding
+## Objetivo del proyecto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Aplicar conceptos de desarrollo frontend mediante Angular, incluyendo componentes, servicios, rutas dinámicas, formularios, manejo de estado con Signals y consumo de APIs REST.
 
-```bash
-ng generate component component-name
-```
+## Autor
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+**Nicolás Spina**
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[GitHub](https://github.com/SpinaNicolas)
